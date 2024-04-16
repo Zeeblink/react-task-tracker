@@ -1,7 +1,7 @@
 // src/TaskList.tsx
 
 import React from "react";
-import { Task } from "./types";
+import { Task } from "../types";
 import TaskItem from "./TaskItem";
 
 interface TaskListProps {

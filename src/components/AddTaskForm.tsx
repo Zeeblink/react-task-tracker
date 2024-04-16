@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Task } from "./types";
+import { Task } from "../types";
 
 interface AddTaskFormProps {
-  addTask: (task: Task) => void;
+  addTask: Function;
 }
 
-const AddTaskForm = ({ addTask }) => {
+const AddTaskForm: React.FC<AddTaskFormProps> = ({ addTask }) => {
   const [taskText, setTaskText] = useState<string>("");
   const [day, setDay] = useState<string>("");
   const [reminder, setReminder] = useState<boolean>(false);

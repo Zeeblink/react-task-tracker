@@ -1,7 +1,7 @@
 // src/TaskItem.tsx
 
 import React from "react";
-import { Task } from "./types";
+import { Task } from "../types";
 
 interface TaskItemProps {
   task: Task;
