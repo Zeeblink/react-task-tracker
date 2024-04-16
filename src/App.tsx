@@ -7,7 +7,7 @@ import AddTaskForm from "../src/components/AddTaskForm";
 
 const App: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([
-    { id: 1, taskText: "Eat bread", day: "2024-04-13", reminder: false },
+    { id: 1, taskText: "Write letter", day: "2024-04-13", reminder: false },
   ]);
 
   const [showForm, setshowForm] = useState<boolean>(false);
@@ -37,8 +37,8 @@ const App: React.FC = () => {
   const toggleReminder = (id: number) => {
     setTasks(
       tasks.map((task) =>
-        task.id === id ? { ...task, reminder: !task.reminder } : task
-      )
+        task.id === id ? { ...task, reminder: !task.reminder } : task,
+      ),
     );
   };
 
