@@ -22,8 +22,8 @@ const App: React.FC = () => {
   // Function to add new task to task TaskList
   const addTask: Function = (task: Task) => {
     const newTask: Task = {
-      id: Math.floor(Math.random() * 1000) + 1,
       ...task,
+      id: Math.floor(Math.random() * 99) + 2,
     };
     setTasks([...tasks, newTask]);
   };

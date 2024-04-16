@@ -41,7 +41,7 @@ var App = function () {
     };
     // Function to add new task to task TaskList
     var addTask = function (task) {
-        var newTask = __assign({ id: Math.floor(Math.random() * 1000) + 1 }, task);
+        var newTask = __assign(__assign({}, task), { id: Math.floor(Math.random() * 99) + 2 });
         setTasks(__spreadArray(__spreadArray([], tasks, true), [newTask], false));
     };
     // Function to delete a task
