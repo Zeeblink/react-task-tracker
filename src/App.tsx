@@ -7,7 +7,24 @@ import AddTaskForm from "../src/components/AddTaskForm";
 
 const App: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([
-    { id: 1, taskText: "Write letter", day: "2024-04-13", reminder: false },
+    {
+      id: 1,
+      taskText: "Workout",
+      day: "12-04-2024",
+      reminder: false,
+    },
+    {
+      id: 1,
+      taskText: "Debug code",
+      day: "14-04-2024",
+      reminder: false,
+    },
+    {
+      id: 1,
+      taskText: "Video call with Elon",
+      day: "01-05-2024",
+      reminder: false,
+    },
   ]);
 
   const [showForm, setshowForm] = useState<boolean>(false);
