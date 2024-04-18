@@ -14,13 +14,13 @@ const App: React.FC = () => {
       reminder: false,
     },
     {
-      id: 1,
+      id: 2,
       taskText: "Debug code",
       day: "14-04-2024",
       reminder: false,
     },
     {
-      id: 1,
+      id: 3,
       taskText: "Video call with Elon",
       day: "01-05-2024",
       reminder: false,
@@ -40,7 +40,7 @@ const App: React.FC = () => {
   const addTask: Function = (task: Task) => {
     const newTask: Task = {
       ...task,
-      id: Math.floor(Math.random() * 99) + 2,
+      id: Math.floor(Math.random() * 99) + 4,
     };
     setTasks([...tasks, newTask]);
   };
